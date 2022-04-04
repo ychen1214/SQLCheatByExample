@@ -28,6 +28,12 @@ INSERT INTO dbo.TestSplit (StringList) VALUES('clothing,road,,touring,bike' )
 INSERT INTO dbo.TestSplit (StringList) VALUES('mike,john,paul,don,chase' )
 
   
+--Similar to INNER JOIN CHECK
 SELECT * 
-FROM dbo.TestSplit CROSS APPLY STRING_SPLIT(StringList, ',',1)  
+FROM dbo.TestSplit CROSS APPLY STRING_SPLIT(StringList, ',')  
+WHERE RTRIM(value) <> '';
+
+--Like FULL OUTER JOIN--returns everything
+SELECT * 
+FROM dbo.TestSplit OUTER APPLY STRING_SPLIT(StringList, ',')  
 WHERE RTRIM(value) <> '';
