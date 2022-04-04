@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQLCheatSheetbyExample", "SQLCheatSheetbyExample.ssmssqlproj", "{63B7734F-0F7E-478E-B822-FA02060ACB71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63B7734F-0F7E-478E-B822-FA02060ACB71}.Default|Default.ActiveCfg = Default
+		{6CF732FC-2F94-46C7-A0D9-C36C04267859}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {508229A0-C5CF-4FEE-86F0-4EC1C3EFC50D}
+	EndGlobalSection
+EndGlobal
