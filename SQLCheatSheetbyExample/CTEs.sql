@@ -1,3 +1,5 @@
+--https://stackoverflow.com/questions/25296228/t-sql-recursive-cte-to-find-highest-parentid
+
 --Example CTEs
 IF OBJECT_ID('dbo.employee') IS NOT NULL
   DROP TABLE dbo.employee;
