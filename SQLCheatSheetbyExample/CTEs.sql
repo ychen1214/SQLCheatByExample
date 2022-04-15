@@ -35,13 +35,15 @@ FROM cte;
 
 
 --CTE with Colums
-;WITH cte (employeeid, employeename, managerid)
+;WITH cte (employeeid, employeename, managerid,Hiearchylevel)
 AS
 (
   SELECT EmployeeId,
          EmployeeName,
-         ManagerId
+         ManagerId,
+         EmployeeID AS Hiearchylevel
   FROM dbo.employee
+  WHERE ManagerId IS NULL 
 )
 SELECT * FROM cte
 
@@ -54,6 +56,7 @@ AS
          ManagerId,
          0 AS Employeelevel
   FROM dbo.employee
+  WHERE ManagerId IS NULL
   UNION ALL
   SELECT e.EmployeeId,
          e.EmployeeName,
